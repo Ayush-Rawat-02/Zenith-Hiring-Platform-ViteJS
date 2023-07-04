@@ -1,0 +1,1021 @@
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  color: white;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  /* margin: 0; */
+  scroll-behavior: smooth;
+}
+
+Link,
+a {
+  color: white;
+  text-decoration: none;
+}
+Link {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.sign_btn {
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.2rem 0.4rem;
+  box-shadow: 0 2px 10px #203020;
+  background: #88889050;
+  font-weight: 500;
+}
+.sign_btn:hover {
+  box-shadow: 0 0px 0.5rem pink;
+  background: #88889020;
+  color: Pink;
+}
+
+.gradient_bg {
+  color: white;
+  background: rgb(33, 15, 41);
+  background: linear-gradient(
+    150deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 15, 0.9558404558404558) 87%,
+    rgba(55, 20, 70, 0.9814814814814815) 100%
+  );
+}
+
+/* .gradient_text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+.section_padding {
+  padding: 4rem 6rem;
+}
+.section_margin {
+  padding: 4rem 6rem;
+}
+
+/* .scale-up-ver-top {
+  -webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-ver-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+} */
+
+/* @-webkit-keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+} */
+/* @keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+} */
+
+.zenith_navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  height: 4rem;
+}
+
+.zenith_navbar_links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.zenith_navbar_links_logo {
+  margin: 0 2rem;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.zenith_navbar_links_logo p {
+  margin: 0 0.3rem;
+}
+
+.zenith_navbar_links_logo img {
+  width: 62.56px;
+  height: 16.02;
+  color: white;
+  margin-right: 1rem;
+}
+
+.links_550 {
+  display: none;
+}
+
+.zenith_navbar_links_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.zenith_navbar_sign {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.zenith_navbar_links_container p,
+.zenith_navbar_sign p,
+.zenith_navbar_menu_container p,
+.zenith_navbar_menu_1050_sign p {
+  color: #000;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  margin: 0 1rem;
+  cursor: pointe;
+}
+
+.zenith_navbar_sign button,
+.zenith_navbar_menu_container button,
+.zenith_navbar_menu_container_sign button,
+.zenith_navbar_menu_1050_sign button {
+  padding: 0.5rem 1rem;
+  margin-left: 2rem;
+  color: white;
+  box-shadow: 0 2px 10px #203020;
+  background: #88889050;
+  font-weight: 500;
+  font-size: 18px;
+  border: 0;
+  border-radius: 5px;
+  line-height: 25px;
+  outline: none;
+  cursor: pointer;
+}
+.zenith_header_headline button:hover,
+.zenith_navbar_sign button:hover,
+.zenith_navbar_menu_container button:hover,
+.zenith_navbar_menu_container_sign button:hover,
+.zenith_navbar_menu_1050_sign button:hover {
+  box-shadow: 0 0px 0.5rem pink;
+  background: #88889020;
+  color: Pink;
+}
+.zenith_navbar_menu {
+  margin-left: 1rem;
+  align-items: center;
+  display: none;
+  position: relative;
+}
+
+.zenith_navbar_menu svg {
+  cursor: pointer;
+}
+
+.zenith_navbar_menu_container {
+  display: flex;
+  /* justify-content: flex-end; */
+  align-items: flex-end;
+  flex-direction: column;
+  box-shadow: 0 2px 5px black;
+  /* text-align: end; */
+  padding: 2rem;
+  position: absolute;
+  top: 32px;
+  right: 0;
+  margin-top: 1rem;
+  min-width: 210px;
+  border-radius: 5px;
+  box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+}
+
+.zenith_navbar_menu_container p {
+  margin: 1rem 0;
+}
+
+.zenith_navbar_menu_container_link_sign {
+  display: none;
+}
+
+.zenith_navbar_menu_container_sign {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.zenith_navbar_menu_1050_sign {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.zenith_header {
+  display: flex;
+}
+
+.zenith_header_headline {
+  background: url(../assets/Home-bg.jpg);
+  height: 53rem;
+  /* height: 100%; */
+  padding: 6rem;
+  background-position: center;
+  background-size: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.empty_box {
+  height: 4rem;
+}
+
+.zenith_header_headline h1 {
+  margin-top: 6rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+  text-transform: capitalize;
+  line-height: 2.2rem;
+}
+
+.zenith_header_headline h3 {
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+}
+
+.zenith_header_headline button {
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 0.6rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: white;
+  width: 10rem;
+  height: 4rem;
+  cursor: pointer;
+}
+
+.zenith_header_content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  margin: 0 5rem 0 0;
+}
+
+.zenith_header_content h1 {
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 65px;
+  letter-spacing: -0.04rem;
+}
+
+.zenith_header_content p {
+  /* font-style: normal; */
+  /* font-weight: normal; */
+  font-size: 19px;
+  line-height: 30px;
+  margin-top: 1.5rem;
+}
+
+.zenith_header_content_input {
+  width: 100%;
+  margin: 2rem 0 1rem;
+
+  display: flex;
+  /* direction is row by default */
+}
+
+.zenith_header_content_input input {
+  flex: 2;
+  width: 100%;
+  min-height: 35px;
+  border-radius: 5px 0 0 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 30px;
+  outline: none;
+  padding: 0 0.8rem;
+}
+.zenith_header_content_input input:hover {
+  box-shadow: 0 2px 10rem #cf909080;
+}
+
+.zenith_header_content_input button {
+  flex: 0.6;
+  width: 100%;
+  min-height: 50px;
+  background: #88889050;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 30px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  padding: 0 1rem;
+}
+.zenith_header_content_input button:hover {
+  background: #88889020;
+  box-shadow: 0 2px 10rem #cf909080;
+}
+
+.zenith_header_content_people {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.zenith_header_content_people img {
+  /* width:  */
+  /* height: */
+}
+.zenith_header_content_people p {
+  margin: 0.5rem 0 0 1rem;
+  /* align-items: center; */
+  /* text-align: center; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 30px;
+}
+
+.zenith_header_image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zenith_header_image img {
+  width: 80%;
+  border-radius: 3rem;
+  box-shadow: 0 2px 10rem #300010;
+}
+
+.zenith_header_image img:hover {
+  box-shadow: 0 4px 12rem #400010;
+}
+
+.zenith_whatzenith {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 0 3rem;
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 0% 0%,
+    rgba(240, 200, 200, 0.15) 30%,
+    rgba(160, 170, 175, 0.25) 65%,
+    rgba(200, 100, 100, 0) 100%
+  );
+}
+
+.zenith_whatzenith:hover {
+  background: radial-gradient(
+    circle at 0% 0%,
+    rgba(220, 180, 180, 0.1) 30%,
+    rgba(1550, 160, 165, 0.25) 65%,
+    rgba(180, 80, 80, 0) 100%
+  );
+}
+
+.zenith_whatzenith_feature {
+  display: flex;
+}
+
+.zenith_whatzenith_feature .zenith_features_container_feature {
+  margin: 0;
+}
+
+.zenith_whatzenith_feature .zenith_features_container_feature_text {
+  max-width: 700px;
+}
+
+.zenith_whatzenith_heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 4rem 0 2rem;
+}
+
+.zenith_whatzenith_heading h1 {
+  font-size: 37px;
+  line-height: 50px;
+  font-weight: 800;
+  outline: 1px;
+  max-width: 510px;
+}
+
+.zenith_whatzenith_heading p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 25px;
+  max-width: 150px;
+  cursor: pointer;
+
+  color: #fc5050;
+}
+
+.zenith_whatzenith_container {
+  display: flex;
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
+  margin-top: 2rem;
+}
+
+.zenith_features_container_feature {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+
+  margin: 1rem;
+}
+
+.zenith_features_container_feature_title {
+  flex: 1;
+  max-width: 180px;
+  margin-right: 2rem;
+}
+
+.zenith_features_container_feature_title h1 {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.04rem;
+  color: #fff;
+}
+
+.zenith_features_container_feature_title div {
+  width: 38px;
+  height: 3px;
+  box-shadow: 0 4px 4px 0 #0002;
+  margin-bottom: 0.25rem;
+}
+
+.zenith_features_container_feature_text {
+  flex: 2;
+  max-width: 390px;
+  display: flex;
+}
+
+.zenith_features_container_feature_text p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.gallery_grid {
+  text-align: center;
+  /* background-color: #001; */
+  background: rgb(33, 15, 41);
+  background: linear-gradient(
+    210deg,
+    rgba(55, 20, 70, 0.9814814814814815) 0%,
+    rgba(0, 0, 15, 0.9558404558404558) 20%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  color: white;
+}
+.gallery_grid h1 {
+  margin: 0;
+  padding-top: 5rem;
+}
+
+.expandable_cards_box {
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.expandable_card {
+  color: white;
+  width: 17rem;
+  height: 21rem;
+  border: 1rem solid #7565;
+  cursor: pointer;
+  margin: 1px;
+  box-shadow: 0 2px 5rem #9984;
+}
+
+.expandable_card:hover {
+  border: none;
+  font-size: 100%;
+  /* width: 20rem;
+   */
+  box-shadow: 0 2px 5rem #9559;
+}
+
+.support {
+  background: url("../assets/team.jpg");
+  background-size: 212%;
+}
+.mentor {
+  background: url(../assets/mentor.jpg);
+  background-size: 200%;
+}
+.environment {
+  background: url(../assets/park.jpg);
+  background-size: 100%;
+}
+.mic {
+  background: url(../assets/mic.jpg);
+  background-size: 205%;
+}
+.coffee {
+  background: url(../assets/coffee.jpg);
+  background-size: 100%;
+}
+
+.clients {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 6rem;
+}
+.clients h1 {
+  margin: 0;
+  padding: 0 0 2.5rem 0;
+}
+.client_box {
+  display: flex;
+  justify-content: space-between;
+}
+.client_box img {
+  width: 6rem;
+}
+.client_box img:hover {
+  width: 7rem;
+  cursor: pointer;
+}
+
+#apple {
+  width: 3rem;
+}
+#apple:hover {
+  width: 3.2rem;
+}
+
+.final_text {
+  display: flex;
+  justify-content: center;
+  background-color: #000e;
+  color: white;
+  box-shadow: 0 8px 8rem #9984;
+  border-bottom: 1px solid white;
+  padding: 2rem;
+}
+
+.final_text button {
+  background-color: black;
+  border-radius: 1rem;
+  border: 2px solid white;
+  height: 3.5rem;
+  color: white;
+  padding: 1rem;
+  margin-left: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.final_text button:hover {
+  box-shadow: 0 2px 4rem #600;
+}
+
+footer {
+  background-color: black;
+  padding: 1rem 5rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search_bar {
+  width: 100%;
+  margin: 0;
+  padding: 1rem 2rem;
+  display: flex;
+  background-color: #9668;
+  box-shadow: 0 2px 10rem blue;
+}
+
+.search_bar input {
+  flex: 2;
+  min-height: 25px;
+  min-width: 100px;
+  border: 2px solid black;
+  border-radius: 5px 0 0 5px;
+  font-weight: 500;
+  padding: 0 0.8rem;
+}
+.search_bar button {
+  flex: 0.6;
+  width: 100%;
+  min-height: 25px;
+  height: 50px;
+  min-width: 30px;
+  background: rgba(50, 30, 40, 0.65);
+  border: 2px solid black;
+  border-radius: 0 5px 5px 0;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  padding: 0 1rem;
+}
+.search_bar select {
+  background-color: grey;
+  padding: 0.5rem;
+  border: none;
+}
+.search_bar select:hover {
+  background-color: #fffa;
+}
+
+.search_bar input,
+.search_bar button,
+.search_bar select {
+  font-style: normal;
+  outline: none;
+  font-size: 1.3rem;
+  line-height: 20px;
+}
+
+.search_bar button:hover {
+  background-color: black;
+  border: 2px solid white;
+}
+
+.candidate_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgb(33, 15, 41);
+  background: linear-gradient(
+    150deg,
+    rgba(22, 0, 0, 50) 0%,
+    rgba(0, 0, 15, 0.9558404558404558) 45%,
+    rgba(55, 20, 70, 0.9814814814814815) 90%
+  );
+  color: white;
+  border-bottom: solid white 1px;
+}
+.candidate {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2rem;
+  padding: 2rem;
+  border-bottom: 1px solid;
+  font-size: 1.05rem;
+}
+.candidate:hover {
+  background-color: #5554;
+}
+
+/* @media screen and (max-width: 1050px) {
+  .zenith_whatzenith_heading p {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2rem;
+    max-width: 300px;
+  }
+  .zenith_header {
+    flex-direction: column;
+  }
+  .zenith_header_content {
+    margin: 0 0 3rem;
+  }
+  .expandable_card {
+    height: 14rem;
+  }
+  .zenith_header_headline h1 {
+    font-size: 2rem;
+    text-wrap: wrap;
+  }
+  .zenith_header_image img {
+    width: 60%;
+  }
+  .zenith_whatzenith h1 {
+    font-size: 1.4rem;
+  }
+  .zenith_header_headline {
+    height: 35rem;
+  }
+  .menu-icon {
+    margin: 0 10px 0 25px;
+  }
+} */
+@media screen and (min-width: 800px) and (max-width: 1086px) {
+  .zenith_navbar_links_container {
+    display: none;
+  }
+  .zenith_navbar_menu_container_sign {
+    display: none;
+  }
+  .zenith_navbar_menu_sign {
+    display: flex;
+  }
+  .zenith_navbar_menu {
+    display: flex;
+  }
+  .zenith_whatzenith_heading p {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2rem;
+    max-width: 300px;
+  }
+  .zenith_header_content {
+    margin: 0 0 3rem;
+  }
+  .expandable_card {
+    height: 14rem;
+  }
+  .zenith_header_headline h1 {
+    font-size: 2rem;
+    text-wrap: wrap;
+  }
+  .zenith_header_image img {
+    width: 60%;
+  }
+  .zenith_whatzenith h1 {
+    font-size: 1.4rem;
+  }
+  .zenith_header_headline {
+    height: 35rem;
+  }
+  .menu-icon {
+    margin: 0 10px 0 25px;
+  }
+}
+
+/* Middle sized devices (tabs) */
+@media screen and (min-width: 550px) and (max-width: 800px) {
+  .search_bar {
+    height: 3rem;
+  }
+  .search_bar input,
+  .search_bar select,
+  .search_bar button {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .search_bar button,
+  .search_bar select {
+    height: 1.5rem;
+    font-size: 0.8rem;
+    padding: 0 0.5rem;
+  }
+  .section_margin {
+    padding: 4rem;
+  }
+  .section_padding {
+    padding: 4rem 2rem;
+  }
+
+  .zenith_header {
+    flex-direction: column;
+  }
+
+  .zenith_navbar_links_container {
+    display: none;
+  }
+  .zenith_navbar_menu_1050_sign {
+    /* display: none; */
+  }
+  .zenith_navbar_menu_container_sign {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+  }
+  .zenith_navbar_menu_sign {
+    display: none;
+  }
+  .zenith_navbar_menu {
+    display: flex;
+  }
+  .zenith_whatzenith_container {
+    flex-direction: column;
+  }
+  .zenith_header_content {
+    margin: 0;
+    padding: 2rem;
+  }
+  .zenith_header_content h1 {
+    font-size: 38px;
+    line-height: 45px;
+  }
+  .zenith_header_content p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .zenith_header_content_people {
+    flex-direction: column;
+  }
+  .zenith_header_content_people p {
+    font-size: 8px;
+    margin: 0;
+  }
+  .zenith_header_content_input input,
+  .zenith_header_content_input button {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .client_box {
+    flex-wrap: wrap;
+  }
+  .client_box img {
+    margin: 1rem;
+  }
+  .final_text button {
+    font-size: 0.8rem;
+  }
+  .expandable_cards_box {
+    flex-wrap: wrap;
+  }
+  .expandable_card {
+    height: 18rem;
+  }
+  .zenith_header_headline {
+    height: 30rem;
+  }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 550px) {
+  .search_bar input,
+  .search_bar select,
+  .search_bar button {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .search_bar button,
+  .search_bar select {
+    height: 1.5rem;
+    font-size: 0.8rem;
+    padding: 0 0.5rem;
+  }
+
+  .zenith_header {
+    flex-direction: column;
+  }
+  .zenith_header_content {
+    margin-left: 5rem;
+  }
+
+  .zenith_header_content h1 {
+    font-size: 1.7rem;
+  }
+  .zenith_header_content p {
+    font-size: 0.8rem;
+  }
+
+  .zenith_whatzenith_container {
+    flex-direction: column;
+  }
+  .zenith_whatzenith_heading {
+    flex-wrap: wrap;
+  }
+  .zenith_whatzenith_heading h1 {
+    font-size: 1.8rem;
+  }
+  .zenith_navbar_links_container {
+    display: none;
+  }
+  .zenith_navbar_menu_1050_sign {
+    display: none;
+  }
+  .links_550 {
+    display: flex;
+  }
+  .section_padding {
+    padding: 4rem 2rem;
+  }
+  .section_margin {
+    padding: 4rem 2rem;
+  }
+  .zenith_features_container_feature_title h1 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .zenith_features_container_feature_title p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .zenith_features_container_feature {
+    margin: 1rem 0;
+  }
+  .expandable_cards_box {
+    flex-wrap: wrap;
+  }
+  .gallery_grid h1 {
+    padding: 2rem;
+  }
+  #apple {
+    width: 40%;
+    margin: 1rem;
+  }
+  .expandable_card {
+    height: 12rem;
+  }
+  .final_text button {
+    font-size: 0.6rem;
+  }
+  .clients h1 {
+    font-size: 1.8rem;
+  }
+  .client_box img {
+    width: 40%;
+    margin: 1rem;
+  }
+  .client_box {
+    flex-wrap: wrap;
+  }
+  .gallery_grid h1 {
+    font-size: 1.8rem;
+  }
+  .zenith_header_headline {
+    text-align: center;
+    align-items: center;
+    height: 15rem;
+    padding: 0 2rem;
+  }
+  .zenith_header_headline h1 {
+    font-size: 1.5rem;
+    margin: 0.3rem;
+  }
+  .gradient_text: {
+    font-size: 1rem;
+  }
+  .zenith_header_headline h3 {
+    font-size: 0.85rem;
+  }
+  footer {
+    font-size: 0.8rem;
+    padding: 2.5rem;
+  }
+  .zenith_navbar_links_logo {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 700px) and (min-width: 550px) {
+  .zenith_header_headline {
+    text-align: center;
+    align-items: center;
+    height: 25rem;
+  }
+  .zenith_header_headline h1 {
+    margin: 0.2rem;
+  }
+  .zenith_header_headline h3 {
+    margin: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 1256px) and (min-width: 1086px) {
+  .zenith_header_headline {
+    height: 44rem;
+  }
+}
+
+@media screen and (max-width: 1400px) and (min-height: 1256px) {
+  .zenith_header_headline {
+    height: 45rem;
+  }
+}
